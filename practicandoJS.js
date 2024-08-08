@@ -104,3 +104,47 @@ for (let f = 0; f < allLatam.length; f++) {
         console.log(allLatam[f][c]) // aquí podemos hacer que si es valor es tal hacer otras funciones
     }
 }
+
+let regionsSpain = ['Andalucia', 'Murcia', 'Extremadura']
+
+for (let i = 0; i < regionsSpain.length; i++) {
+    console.log(regionsSpain[i])
+
+    if (regionsSpain[i] == 'Murcia') {
+        console.log('Aquí dicen acho')
+    }
+}
+
+// MÉTODOS ARRAYS
+
+let fruits = ['Apple', 'Orange']
+fruits.push('Mango') // añade un elemento al final del array
+console.log(fruits)
+
+fruits.pop() // elimina el último elemento
+console.log(fruits)
+
+fruits.shift() // elimina el primer elemento
+console.log(fruits)
+
+fruits.unshift('kiwi') //añade elmento al inicio
+fruits.unshift('watermelon')
+fruits.unshift('apple')
+console.log(fruits)
+
+let fruitsWithA = fruits.filter((fruit) => fruit.includes('a')) // Filter, es un métodos que nos permite filtrar a través de otr ométodo, el include(ciertos elementos, en este caso a)
+console.log(fruitsWithA)
+
+//concatenar dos vectores
+
+let fruits1 = ['Apple', 'Orange', 'Banana']
+let fruits2 = ['Mango', 'Kiwi']
+
+let allFruits = fruits1.concat(fruits2)
+console.log(allFruits)
+
+allFruits.reverse() // altero el orden del array al inverso
+console.log(allFruits)
+
+allFruits.sort() // ordena alfabeticamente orden ascendete
+console.log(allFruits)
