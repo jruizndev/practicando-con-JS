@@ -80,13 +80,27 @@ let city3 = ['Málaga', 'Andalucía', 'España']
 let bigcities = [city1, city2, city3]
 console.log(bigcities)
 
-//Recorrer un array con for
+//Recorrer un array con for (vectores)
 
 let latamCountries = ['Argentina', 'Brasil', 'México', 'Colombia', 'Perú']
 for (let i = 0; i < latamCountries.length; i++) {
     console.log(latamCountries[i])
-    //podemos añadir una descripción entre medias del reccorrido
+    //podemos añadir una descripción entre medias del reccorrido // también podeos hacer otras cosas
     if (latamCountries[i] == 'Argentina') {
         console.log('Es el país del mate')
+    }
+}
+
+//Recorrer matrices con for (2 veces)
+
+let allLatam = [
+    ['Argentina', 'Mexico', 'Colombia', 'Brasil'],
+    ['Chile', 'Peru', 'Venezuela', 'Uruguay'],
+    ['Ecuador', 'El Salvador', 'Bolivia', 'Paraguay'],
+]
+
+for (let f = 0; f < allLatam.length; f++) {
+    for (let c = 0; c < allLatam[f].length; c++) {
+        console.log(allLatam[f][c]) // aquí podemos hacer que si es valor es tal hacer otras funciones
     }
 }
