@@ -148,3 +148,23 @@ console.log(allFruits)
 
 allFruits.sort() // ordena alfabeticamente orden ascendete
 console.log(allFruits)
+
+//fUNCIONES
+function gretting() {
+    console.log('Hola! Estoy en la función')
+}
+gretting()
+
+//función sumar
+
+function add(num1, num2) {
+    let result
+    result = num1 + num2
+    return result
+}
+
+let addition = add(5, 2)
+console.log('el resultado es: ' + addition)
+
+addition = add(8, 9)
+console.log('el resultado es: ' + addition)
