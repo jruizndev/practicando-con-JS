@@ -168,3 +168,52 @@ console.log('el resultado es: ' + addition)
 
 addition = add(8, 9)
 console.log('el resultado es: ' + addition)
+
+// EJERCICIO ARRAYS Y FUNCIONES POKEMON
+
+//CREAR ARRAY PARA NOMBRES DE POKEMON
+
+let pokemonsName = ['Charmander', 'Pikachu', 'Bulbasur', 'Squirtle']
+
+//Matriz para habilidades
+
+let habilities = [
+    [80, 75, 90], //charmander
+    [65, 55, 60], //pikachu
+    [80, 70, 65], //bulbasur
+    [85, 90, 70], //squirtle
+]
+//función para calcular media
+function calculateHabMed(habilities) {
+    let medium = []
+
+    for (let i = 0; i < habilities.length; i++) {
+        let file = habilities[i]
+        let addP = file.reduce((total, hability) => total + hability, 0)
+        medium[i] = addP / file.length
+    }
+    return medium
+}
+//funcion para evaluar si entra en liga pokemon (nv 70)
+function levelCheck(pokemonsName, medium) {
+    for (let i = 0; i < medium.length; i++) {
+        if (medium[i] >= 70) {
+            console.log(
+                'El Pokemon ' +
+                    pokemonsName[i] +
+                    ' Supera el promedio con: ' +
+                    medium[i]
+            )
+        } else {
+            console.log(
+                'El Pokémon ' +
+                    pokemonsName[i] +
+                    ' No supera el promedio con: ' +
+                    medium[i]
+            )
+        }
+    }
+}
+
+let medium = calculateHabMed(habilities)
+levelCheck(pokemonsName, medium)
