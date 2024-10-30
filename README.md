@@ -1,3 +1,3 @@
 # practicando-con-JS
 
-Esto es un repositorio para practicar con JS
+Esto es un espacio para prácticar con js
